@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Creations | 3D Showcase</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 3D Model Viewer -->
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>Sweet Creations.</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#showcase">Showcase</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="subtitle">A DIGITAL 3D SHOWCASE</p>
+
+            <h2>Creativity<br>Made Sweet.</h2>
+
+            <p>
+                Explore two unique 3D creations designed
+                and modelled using Blender.
+            </p>
+
+            <a href="#showcase" class="btn">Explore Models</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Showcase Section -->
+    <section class="showcase" id="showcase">
+
+        <div class="section-heading">
+
+            <p class="subtitle">OUR COLLECTION</p>
+
+            <h2>Explore Our Creations</h2>
+
+            <p>
+                Interact with our 3D models.
+                Click and drag to rotate them and scroll to zoom.
+            </p>
+
+        </div>
+
+
+        <div class="models">
+
+            <!-- Cake Model -->
+            <div class="model-card">
+
+                <div class="model-number">01 / CAKE</div>
+
+                <model-viewer
+                    src="models/Digitechcake_yaray.glb"
+                    camera-controls
+                    auto-rotate
+                    rotation-per-second="20deg"
+                    shadow-intensity="1"
+                    environment-image="neutral"
+                    exposure="1"
+                    tone-mapping="aces">
+                </model-viewer>
+
+                <div class="model-info">
+
+                    <h3>The Cake</h3>
+
+                    <p>
+                        A detailed 3D cake model created
+                        in Blender.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Cupcake Model -->
+            <div class="model-card">
+
+                <div class="model-number">02 / CUPCAKE</div>
+
+                <model-viewer
+                    src="models/DigitechCupcake_max.glb"
+                    camera-controls
+                    auto-rotate
+                    rotation-per-second="20deg"
+                    shadow-intensity="1"
+                    environment-image="neutral"
+                    exposure="1"
+                    tone-mapping="aces">
+                </model-viewer>
+
+                <div class="model-info">
+
+                    <h3>The Cupcake</h3>
+
+                    <p>
+                        A carefully modelled cupcake
+                        showcasing its details.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <p class="subtitle">BEHIND THE PROJECT</p>
+
+        <h2>Created in Blender.<br>Displayed in 3D.</h2>
+
+        <p>
+            This project showcases two original 3D models
+            created using Blender. Through this website,
+            visitors can interact with each creation and
+            explore its details from different angles.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>Sweet Creations.</h2>
+
+        <p>Year 10 Digital Technology | 2026</p>
+
+
+    </footer>
+
+</body>
+</html>
